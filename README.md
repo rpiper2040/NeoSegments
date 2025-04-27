@@ -114,32 +114,22 @@ delay(3000);
 ```
 ### Functions
 
-- **`Adafruit_NeoPixel strip(NUM_PIXELS, DATA_PIN, NEO_GRB + NEO_KHZ800);`**  
-  Constructor to initialize the NeoPixel strip.
-
-- **`NeoSegments segs(strip, PIXELS_PER_SEGMENT);`**  
-  Constructor to initialize the NeoPixel strip.
-
-- **`segs.begin()`**  
-  Initializes the NeoSegments.
-
-- **`setString(const char* str)`**  
-  Displays the given string on the NeoPixel strip.
-
-- **`update()`**  
-  Call in the `loop()` to update the display. Should be called periodically.
-
-- **`setDigitColor(uint32_t color)`**  
-  Sets the color of the digits (e.g., `strip.Color(255, 0, 0)` for red).
-
-- **`clear()`**  
-  Clears the display and resets all settings (adafruit.
-
-- **`registerSymbol(char symbol, uint8_t length, bool show = true)`**  
-  Registers a custom symbol (such as punctuation or special characters) with a specified length and visibility.
-
-- **`registerDigit(char c, const uint8_t segs[7])`**  
-  Registers a custom digit pattern to be displayed.
+- `NeoSegments(Adafruit_NeoPixel& strip, uint8_t pixelsPerSegment, uint8_t segmentsPerDigit = 7)`  
+  Initializes the display.
+- `begin()`  
+  Starts the LED strip and builds the digit map.
+- `setString(const char* str)`  
+  Queues up a new string to display.
+- `update()`  
+  Sends data to the LED strip; call this each loop.
+- `setDigitColor(uint32_t color)`  
+  Changes the color of all digits.
+- `clear()`  
+  Clears the display.
+- `registerSymbol(char symbol, uint8_t length, bool show = true)`  
+  Defines a custom symbol length.
+- `registerDigit(char c, const uint8_t segs[7])`  
+  Adds a custom 7-segment pattern.
 
 ## License
 
