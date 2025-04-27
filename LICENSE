@@ -1,6 +1,8 @@
 MIT License
 
-Copyright (c) 2025 rpiper2040
+Copyright (c) 2025 Robert Piper (rpiper2040@gmail.com)
+
+This library uses the [Adafruit NeoPixel Library](https://github.com/adafruit/Adafruit_NeoPixel), which is licensed under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
