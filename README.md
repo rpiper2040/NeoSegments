@@ -15,12 +15,12 @@
 Each digit is built from 7 segments (groups of NeoPixels), laid out similar to a classic seven-segment display.
 Data flows from the MCU into the first segment (1), and continues through the others in order.
  ```
-          222
+           222
          1     3
          1     3
-  MCU -> 1     3
+   IN -> 1     3
            444
-         5     7 -> to next digit/symbol 
+         5     7 -> OUT
          5     7 
          5     7
            666
