@@ -32,26 +32,7 @@ Data flows from the MCU into the first segment (1), and continues through the ot
 ## Dependencies
 This library depends on the [Adafruit NeoPixel Library](https://github.com/adafruit/Adafruit_NeoPixel), which must be installed separately.
 
-## Installation
 
-1. **Via Arduino Library Manager:**
-
-   - Open the Arduino IDE.
-   - Go to **Sketch** → **Include Library** → **Manage Libraries**.
-   - In the Library Manager, search for **NeoSegments**.
-   - Click **Install**.
-
-2. **Manual Installation:**
-
-   - Download or clone this repository.
-   - Copy the entire `NeoSegments` folder into your Arduino libraries folder. This is usually located in:
-     - **Windows**: `Documents/Arduino/libraries/`
-     - **macOS/Linux**: `~/Documents/Arduino/libraries/`
-   - Restart the Arduino IDE to use the library.
-
-3. **Install Adafruit NeoPixel Library:**
-   - In the Arduino IDE, go to **Sketch** → **Include Library** → **Manage Libraries**.
-   - Search for **Adafruit NeoPixel** and install it.
 
 ## Usage
 
